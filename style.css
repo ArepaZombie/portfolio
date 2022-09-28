@@ -1,0 +1,14 @@
+:root{
+  --zombie-pink-1: #F11F6C;
+  --zombie-pink-2: #F279D2;
+  --zombie-purple: #493673;
+  --zombie-green-1: #55D98E;
+  --zombie-green-2: #7BF277;
+  --zombie-green-2: #1C8779;
+
+  font-family:'Orbitron';
+}
+
+#logo{
+  width: 40px;
+}
