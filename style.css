@@ -1,10 +1,16 @@
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+*/
+
 :root{
   --zombie-pink-1: #F11F6C;
   --zombie-pink-2: #F279D2;
   --zombie-purple: #493673;
   --zombie-green-1: #55D98E;
   --zombie-green-2: #7BF277;
-  --zombie-green-2: #1C8779;
+  --zombie-green-3: #1C8779;
   font-size: 10px;
   font-family:'Orbitron';
 }
@@ -13,7 +19,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 /*HEADER*/
@@ -23,6 +28,11 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: var(--zombie-purple);
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
 
 #head-logo,nav ul{
@@ -37,7 +47,7 @@ header{
 
 .nav-link{
   color: white;
-  font-size: 1rem;
+  font-size: 3.1vw;
   text-decoration: none;
   margin: 0 5px;
   display: block;
@@ -48,14 +58,14 @@ header{
 }
 
 #text-logo{
-  font-size: 1.2rem;
+  font-size: 3.7vw;
   font-weight: 900;
   margin: 0;
   text-decoration-line: none;
 }
 
 #img-logo{
-  width: 2rem;
+  width: 6.25vw;
 }
 
 
@@ -67,9 +77,10 @@ header{
   justify-content: space-around;
   background-color: var(--zombie-purple);
   text-align: center;
-  height: 450px;
+  height: 125vw;
   padding: 30px 0;
   overflow: hidden;
+  background-color: var(--zombie-purple);
 }
 
 .pink-hero,h1,#purple-hero{
@@ -81,7 +92,7 @@ header{
   color: white;
   text-decoration: none;
   padding: 7px 20px;
-  font-size: 1.4rem;
+  font-size: 4.3vw;
   display: inline-block;
   width: 60%;
   position: relative;
@@ -110,6 +121,7 @@ header{
   color:var(--zombie-pink-2);
   font-size: 3.5vw;
   margin: 10px;
+  margin-left: 8vw;
 }
 
 h1{
@@ -119,15 +131,96 @@ h1{
   line-height: 21vw;
 }
 
-#hero-slice{
+
+/*ABOUT*/
+#about{
+  background-color: var(--zombie-green-2);
   width: 100%;
-  height: 70px;
-  clip-path: polygon(0% 0%, 100% 0%, 
-  100% 0%, 0% 100%);
-  background-color: var(--zombie-purple);
+  height: 125vw;
+  margin-top: calc(-125vw*0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0% 15%, 100% 0%, 
+                  100% 100%, 0% 100%);
 }
 
+#about h2{
+  font-size: 15vw;
+}
 
+/*SKILLS*/
+#skills{
+  display: grid;
+  grid-template-columns: 5%  auto;
+  grid-template-rows: 20% auto;
+  background-color: var(--zombie-green-1);
+  color: white;
+  height: 80vw;
+  overflow: hidden;
+  clip-path: polygon(0% 0%,  100% 10%, 
+                  100% 100%, 0% 100%);
+  margin-top: calc(-80vw*0.1);
+}
 
+#skills h2{
+  color: var(--zombie-pink-1);
+  font-size: 7.9vw;
+  margin-left: 10px;
+  margin-top: 10px;
+  grid-row: auto;
+  font-weight: 900;
 
+}
 
+#skills-block{
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 5vw;
+  transform: rotate(-5deg);
+
+}
+
+#skills-block div{
+  background-color: var(--zombie-pink-1);
+  padding: 5px 30px;
+  margin-bottom: 5px;
+
+}
+
+#skills-container p{
+  transform: rotate(5deg);
+  margin-top: 2%;
+  margin-left: -15px;
+  font-size: 6.2vw;
+}
+
+#skills-nav ul{
+  list-style: none;
+  display: flex;
+  flex: auto;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  font-size: 3.8vw;
+  font-weight: bold;
+}
+
+.selected{
+  color: var(--zombie-green-1);
+}
+
+#skills-nav{
+  clip-path: polygon(5.6% 0%,  100% 0%, 
+                  100% 100%, 5.2% 100%);
+}
+
+#skills-container{
+  height: calc(80vw*0.5);
+  clip-path: polygon(5.1% 0%,  100% 0%, 
+                  100% 100%, 2.3% 72%);
+
+}
