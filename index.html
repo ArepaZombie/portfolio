@@ -8,15 +8,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<!--React-->  
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<!-- This is what supports JSX compilation (and other transformations) -->
+  <script src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"></script>
+<!--Main scrip-->
+  <script src="index.js" type="text/babel"></script>
   <title>ArepaZombie's Portfolio</title>
 </head>
 <body>
-  <img src="arepazombie.png" alt="logo" id="logo">
+<!--HEADER-->
+  <header>
+    <div id="head-logo">
+      <img src="arepazombie.png" alt="logo" id="img-logo">
+      <a id="text-logo" href="#hero">ArepaZombie</a>
+    </div>
 
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skill" class="nav-link">Skill</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact-me" class="nav-link">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Jorge</h1>
-  <h1>Torres</h1>
+  <!--HERO-->
+  <section id="hero">
+      <a href="CV 2022 JETM.pdf" class="pink-hero">take a look to my CV!</a>
+      <div id="titulo">
+        <h1>Jorge Torres</h1>
+        <p id="purple-hero">FRONTEND WEB DESIGNER - PROGRAMMER</p>
+      </div>
+      <a href="#contact-me" class="pink-hero">make it fast... contact me!</a>
+  </section>
+  <div id="hero-slice"></div>
 
-  <script src="index.html"></script>
+  <!--React-->
+    
 </body>
 </html>
