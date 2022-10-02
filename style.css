@@ -5,13 +5,13 @@
 */
 
 :root{
-  --zombie-pink-1: #F11F6C;
-  --zombie-pink-2: #F279D2;
-  --zombie-purple: #493673;
+  --zombie-pink-1:  #F11F6C;
+  --zombie-pink-2:  #F279D2;
+  --zombie-purple:  #493673;
   --zombie-green-1: #55D98E;
   --zombie-green-2: #7BF277;
   --zombie-green-3: #1C8779;
-  font-size: .5vw;
+  font-size: 1vw;
   font-family:'Orbitron';
 }
 
@@ -19,6 +19,11 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2{
+  font-size: 7.9rem;
+  font-weight: 900;
 }
 
 /*HEADER*/
@@ -165,12 +170,9 @@ h1{
 
 #skills h2{
   color: var(--zombie-pink-1);
-  font-size: 7.9rem;
   margin-left: 10px;
   margin-top: 10px;
   grid-row: auto;
-  font-weight: 900;
-
 }
 
 #skills-block{
@@ -222,5 +224,44 @@ h1{
   height: calc(80rem*0.5);
   clip-path: polygon(5.1% 0%,  100% 0%, 
                   100% 100%, 2.3% 72%);
+}
 
+/*PROJECT*/
+#projects{
+  background-color: var(--zombie-green-3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  height: 125rem;
+}
+
+#list-projects{
+  color: white;
+  grid-area: 2 / 1;
+  list-style: none;
+  font-size: 5.12rem;
+}
+
+.s{
+  font-size: 3.33rem !important;
+}
+
+#projects h2{
+  color: var(--zombie-green-2);
+  float: right;
+  grid-area: 1 / 2;
+}
+
+#project-description-box{
+  background-color: var(--zombie-green-2);
+  font-size: 3rem;
+  grid-area: 2 / 2;
+}
+
+#project-link{
+  color: var(--zombie-pink-1);
+}
+
+#sources-link-box{
+  grid-area: 3 / 1 / 3 / 2;
 }
