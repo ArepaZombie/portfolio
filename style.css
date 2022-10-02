@@ -13,6 +13,7 @@
   --zombie-green-3: #1C8779;
   font-size: 1vw;
   font-family:'Orbitron';
+  scroll-behavior: smooth;
 }
 
 body{
@@ -97,7 +98,7 @@ header{
   color: white;
   text-decoration: none;
   padding: 7px 20px;
-  font-size: 4.3rem;
+  font-size: 4.1rem;
   display: inline-block;
   width: 60%;
   position: relative;
@@ -113,7 +114,13 @@ header{
   float: left;
   margin-bottom: 30px;
   right: 5px;
+}
 
+.pink-hero:hover{
+  background-color: var(--zombie-green-2);
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s;
 }
 
 
@@ -126,7 +133,7 @@ header{
   color:var(--zombie-pink-2);
   font-size: 3.5rem;
   margin: 10px;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 
 h1{
@@ -203,12 +210,20 @@ h1{
 #skills-nav ul{
   list-style: none;
   display: flex;
-  flex: auto;
   justify-content: space-around;
   padding: 0;
   margin: 0;
   font-size: 3.8rem;
   font-weight: bold;
+}
+
+.skill-tag{
+  cursor: pointer;
+}
+
+.skill-tag:hover{
+  color: var(--zombie-green-1);
+  transition: all 0.2s;
 }
 
 .selected{
@@ -226,13 +241,17 @@ h1{
                   100% 100%, 2.3% 72%);
 }
 
-/*PROJECT*/
+/*PROJECTs*/
 #projects{
   background-color: var(--zombie-green-3);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
-  height: 125rem;
+  align-items: center;
+  height: 100rem;
+  margin-top: calc(-100rem*0.10);
+  clip-path: polygon(0% 10%, 0% 100%,
+  100% 100%, 100% 0%);
 }
 
 #list-projects{
@@ -240,6 +259,16 @@ h1{
   grid-area: 2 / 1;
   list-style: none;
   font-size: 5.12rem;
+  line-height: 3rem;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.project:hover, #project-link:hover{
+  font-size: 105%;
+  font-weight: 900;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 .s{
@@ -250,12 +279,29 @@ h1{
   color: var(--zombie-green-2);
   float: right;
   grid-area: 1 / 2;
+  margin: 5px 0;
 }
 
 #project-description-box{
   background-color: var(--zombie-green-2);
   font-size: 3rem;
+  height: 90%;
   grid-area: 2 / 2;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  clip-path: polygon(0% 15%, 0% 85%,
+  100% 100%, 100% 0%);
+  font-weight: 900;
+}
+
+#project-title,#project-link,#sources-link-box{
+  font-size: 3.8rem; text-decoration: none;}
+
+
+#project-description-box *{
+  margin: 0;
 }
 
 #project-link{
@@ -263,5 +309,115 @@ h1{
 }
 
 #sources-link-box{
-  grid-area: 3 / 1 / 3 / 2;
+  margin: -20px auto 0 auto;
+  transform: rotate(5.5deg);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  grid-area: 3 / 1 / 3 / 3;
+  padding: 0;
+  font-weight: 600;
+  width: 95%;
 }
+
+.sources-link{
+  text-decoration: none;
+  color: var(--zombie-green-2);
+}
+
+.sources-link:hover{
+  font-size: 120%;
+  color: white;
+  transition: all 0.2s;
+}
+
+/*CONTACT*/
+#contact{
+  background-color: var(--zombie-pink-1);
+  color: white;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+  height: 52rem;
+  clip-path: polygon(0% 0%, 0% 100%,
+  100% 100%, 100% 12%);  
+  position: relative;
+  margin-top: calc(-52rem*0.19);
+}
+
+#contact-links{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 65%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-size: 4rem;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: white;
+}
+
+.contact-link:hover{
+  color: var(--zombie-purple);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+#main-contact,#contact-links{
+  transform: rotate(-33deg);
+}
+
+#main-contact{
+  background-color: var(--zombie-purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  margin: 0;
+  width: 100%;
+  height: 30rem;
+  border-left: solid var(--zombie-purple)  15rem;
+  border-right: solid var(--zombie-purple)  15rem;
+  position: relative;
+  right: 20rem;
+  top: -5rem;
+  clip-path: polygon(0% 0%, 0% 55%, 
+  100% 100%, 100% 0%);
+}
+
+#main-contact h2{
+  font-size: 10rem;
+  margin: 0;
+}
+
+#mail-link{
+  text-decoration: none;
+  font-size: 6.15rem;
+  font-weight: 900;
+  color: white;
+  transform: rotate(6deg);
+  position: relative;
+  top: -7rem;
+  left: 2rem;
+}
+
+#mail-link:hover{
+  color: var(--zombie-pink-1);
+  transition: all 0.2s;
+}
+
+#contact p{
+  font-size: 4rem;
+  position: absolute;
+  bottom: 0px;
+  right: 2rem;
+}
+
+
