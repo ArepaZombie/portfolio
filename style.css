@@ -456,15 +456,20 @@ h1{
     font-size: 15rem;
   }
   
+  /*SKILLS*/
   #skills{
     grid-template-rows: 15% auto auto;
-    height: 120rem;
-    margin-top: -13rem;
+    height: 100rem;
+    margin-top: -10rem;
   }
 
   #skills h2{
     margin: 0;
     position: relative;
+  }
+
+  #skills-nav{
+    margin-top: 10px;
   }
 
   #skills-nav *{
@@ -477,19 +482,21 @@ h1{
 
 
   #skills-container{
-    height: 80rem;
+    height: 70rem;
+    clip-path: polygon(5.1% 0%,  100% 0%, 
+    100% 100%, 2.5% 65%);   
   }
 
   #skills-container p{
     margin-top: 10rem;
-    margin-left: 4rem;
+    margin-left: 7rem;
   }
 
 
   /*PROJECTS*/
   #projects{
-    height: 120rem;
-    margin-top: calc(-120rem*0.15);
+    height: 105rem;
+    margin-top: calc(-105rem*0.10);
   }
 
   #list-projects{
@@ -500,6 +507,7 @@ h1{
   #project-description-box{
     height: 65rem;
     font-size: 6rem;
+    margin-top: -10rem;
   }
   .s{
     font-size: 4rem !important;
@@ -507,7 +515,8 @@ h1{
 
   #sources-link-box{
     transform: rotate(2.5deg);
-    margin-top: -10rem;
+    margin-top: -15rem;
+    font-size: 7rem;
   }
 
   #project-title,#project-link{
@@ -520,8 +529,33 @@ h1{
     clip-path: polygon(0% 0%, 100% 12%, 
     100% 100%, 0% 100%);   
     height: 70rem;
-    /*margin-top: calc(-70rem*0.16);*/
+    margin-top: calc(-70rem*0.16);
   }
 
+  #main-contact{
+    transform: rotate(-25deg);
+    height: 50rem;
+  }
+
+  #main-contact h2{
+    font-size: 18rem;
+    margin-left: -30rem;
+  }
+
+  #mail-link{
+    font-size: 11rem;
+    transform: rotate(4.5deg);
+    position: relative;
+    top: -11rem;
+    left: 12rem;
+  }
+
+  #contact-links{
+    font-size: 7rem;
+    width: 50%;
+    position: relative;
+    top: 18rem;
+    transform: rotate(-25deg);
+  }
 
 }
