@@ -559,3 +559,18 @@ h1{
   }
 
 }
+
+/*OTHER DETAILS*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--zombie-purple);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--zombie-green-2);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--zombie-pink-1);
+}
