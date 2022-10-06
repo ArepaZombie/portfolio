@@ -22,6 +22,10 @@ body{
   box-sizing: border-box;
 }
 
+section{
+  overflow: hidden;
+}
+
 h2{
   font-size: 7.9rem;
   font-weight: 900;
@@ -148,17 +152,29 @@ h1{
 #about{
   background-color: var(--zombie-green-2);
   width: 100%;
-  height: 125rem;
-  margin-top: calc(-125rem*0.15);
+  height: 110rem;
+  margin-top: calc(-115rem*0.1);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  clip-path: polygon(0% 15%, 100% 0%, 
+  padding: auto;
+  overflow: hidden;
+  clip-path: polygon(0% 10%, 100% 0%, 
                   100% 100%, 0% 100%);
 }
 
-#about h2{
-  font-size: 15rem;
+#about-title{
+  font-size: 8rem;
+  margin: 10px;
+}
+
+
+#about-description{
+  width: 90%;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
 }
 
 /*SKILLS*/
@@ -172,7 +188,7 @@ h1{
   overflow: hidden;
   clip-path: polygon(0% 0%,  100% 10%, 
                   100% 100%, 0% 100%);
-  margin-top: calc(-80rem*0.1);
+  margin-top: calc(-80rem*0.12);
 }
 
 #skills h2{
@@ -377,7 +393,7 @@ h1{
 
 #main-contact{
   background-color: var(--zombie-purple);
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -399,7 +415,8 @@ h1{
   margin: 0;
 }
 
-#mail-link{
+#main-contact a{
+  display: inline-block;
   text-decoration: none;
   font-size: 6.15rem;
   font-weight: 900;
@@ -410,9 +427,9 @@ h1{
   left: 2rem;
 }
 
-#mail-link:hover{
+#main-contact a:hover{
   color: var(--zombie-pink-1);
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 #contact p{
@@ -428,6 +445,49 @@ h1{
 @media screen and (min-width: 769px) {
   :root{
     font-size: 0.4vw;
+  }
+
+  /*ABOUT*/
+  #about{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+  }
+
+  #about-title{
+    font-size: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-title span{
+    font-size: 32rem;
+    line-height: 20rem;
+  }
+
+  #about-description{
+    width: 60%;
+    font-size: 5.5rem;
+  }
+
+  /*SKILLS*/
+  #skills{
+    padding-left:10vw;
+  }
+
+  #project-description-box{
+    padding: 3.5vw 10vw 3vw 2vw;
+  }
+
+  #skills h2,#list-projects{
+    margin-left: 10vw;
+  }
+
+  #skills-container p, #skills-nav ul,#projects h2{
+    margin-right: 10vw;
   }
 
   /*HERO*/
@@ -449,7 +509,7 @@ h1{
   }
   .pink-hero{
     width: 40%;
-    transform: rotate(-5deg);
+    font-weight: 300;
   }
 
   h2{
@@ -494,6 +554,7 @@ h1{
 
 
   /*PROJECTS*/
+
   #projects{
     height: 105rem;
     margin-top: calc(-105rem*0.10);
@@ -542,7 +603,7 @@ h1{
     margin-left: -30rem;
   }
 
-  #mail-link{
+  #main-contact a{
     font-size: 11rem;
     transform: rotate(4.5deg);
     position: relative;
@@ -573,4 +634,32 @@ h1{
 
 ::-webkit-scrollbar-thumb{
   background: var(--zombie-pink-1);
+}
+
+/*FOR THE JS*/
+
+.hideLeft, .hideLeft *{
+  transform: translate(-100vw, 0vh) ;
+  transition: transform 1s;
+}
+
+.hideRight, .hideRight *{
+  transform: translate(100vw, 0vh);
+  transition: transform 1s;
+}
+
+.show, .show *{
+  transform: translate(0, 0); 
+}
+
+.showp, .showp *{
+  transform: rotate(-10deg);
+}
+
+@media screen and (min-width:720px) {
+  
+  .showp, .showp *{
+    transform: rotate(-5deg);
+  }
+
 }

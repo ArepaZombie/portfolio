@@ -1,15 +1,26 @@
-class App extends React.Component{
-  render(){
-    return (<h1>Hola React</h1>)}
+let screensize = window.innerHeight;
+let sections = ["about","skills","projects","contact"].map((section)=>document.getElementById(section))
+
+
+function effect(x){
+  let children = x.children;
+
+  if(x.getBoundingClientRect().top+200 < screensize) {
+    for(let child of children){
+      child.classList.add('show');
+    }
+  }else{
+    for(let child of children){
+      child.classList.remove('show');
+    }
+  }
 }
 
-let root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App/>)
-
-const ReactAppFromCDN = ()=>{
-  return (
-      <div>My React App with CDN</div>
-  )
+function show_hero(){
+  let pinks = document.getElementsByClassName('pink-hero');
+  pinks[0].classList.add('showp')
+  pinks[1].classList.add('showp')
 }
- 
-ReactDOM.render(<ReactAppFromCDN />, document.querySelector('#roots'));
+
+window.addEventListener('scroll',() => sections.map(section => effect(section)));
+show_hero()
