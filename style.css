@@ -12,7 +12,7 @@
   --zombie-green-2: #7BF277;
   --zombie-green-3: #1C8779;
   font-size: 1vw;
-  font-family:'Orbitron';
+  font-family:'Orbitron',sans-serif;;
   scroll-behavior: smooth;
 }
 
@@ -211,16 +211,13 @@ h1{
 
 #skills-block div{
   background-color: var(--zombie-pink-1);
-  padding: 5px 30px;
   margin-bottom: 5px;
-
 }
+
 
 #skills-container p{
   transform: rotate(5deg);
-  margin-top: 2%;
-  margin-left: -15px;
-  font-size: 6.2rem;
+  line-height: 2.5rem;
 }
 
 #skills-nav ul{
@@ -247,11 +244,13 @@ h1{
 }
 
 #skills-nav{
+  padding: 5px 30px;
   clip-path: polygon(5.6% 0%,  100% 0%, 
                   100% 100%, 5.2% 100%);
 }
 
 #skills-container{
+  padding: 7rem 0 0 6rem;
   height: calc(80rem*0.5);
   clip-path: polygon(5.1% 0%,  100% 0%, 
                   100% 100%, 2.3% 72%);
@@ -486,7 +485,7 @@ h1{
     margin-left: 10vw;
   }
 
-  #skills-container p, #skills-nav ul,#projects h2{
+  #skills-nav ul,#projects h2{
     margin-right: 10vw;
   }
 
@@ -542,14 +541,10 @@ h1{
 
 
   #skills-container{
-    height: 70rem;
+    height: 100%;
+    padding: 10rem 12rem;
     clip-path: polygon(5.1% 0%,  100% 0%, 
     100% 100%, 2.5% 65%);   
-  }
-
-  #skills-container p{
-    margin-top: 10rem;
-    margin-left: 7rem;
   }
 
 
@@ -663,3 +658,56 @@ h1{
   }
 
 }
+
+/*FOR THE SKILLS*/
+#skills-container p{
+  font-size: 1rem;
+}
+#skills-container p span{
+  margin: 3px;
+  font-weight: 600;
+  display: inline-block;
+  transform: translate(0,0);
+}
+.lang{
+  font-size: 5em;
+}
+
+.lang.sm{
+  font-size: 3.4em;
+}
+
+.tool{
+  font-size: 3em;
+}
+
+.tool.sm{
+  font-size: 1.8em;
+}
+
+.soft{
+  font-size: 3.6em;
+}
+
+#skills-container p span:hover{
+  color: var(--zombie-green-2);
+  cursor:default;
+  font-size: 4em;
+  transition: all 0.5s;
+}
+
+.skill-out{
+  transform: translate(100vw,0) !important;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 769px){
+  #skills-container p{
+    font-size: 1.8rem;
+    line-height: 1.7em;
+  }
+  #skills-container p span{
+    margin: 0 15px;
+  }
+}
+
