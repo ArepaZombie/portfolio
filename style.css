@@ -63,6 +63,13 @@ header{
   display: block;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -30vh;
+  visibility: hidden;
+}
+
 .nav-link:hover,#text-logo{
   color: var(--zombie-green-1);
 }
@@ -462,6 +469,14 @@ h1{
   :root{
     font-size: 0.4vw;
   }
+  
+  a.anchor{
+    top: -15rem;
+  }
+
+  #about-a{
+    top: -60rem
+  }
 
   /*ABOUT*/
   #about{
@@ -580,7 +595,7 @@ h1{
   #project-description-box{
     height: 65rem;
     font-size: 6rem;
-    margin-top: -10rem;
+    margin-top: 0;
   }
   .s{
     font-size: 4rem !important;
