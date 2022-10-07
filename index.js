@@ -80,7 +80,7 @@ function Description(){
     lang:'Python',
     desc:'A series of projects I made for the Computer Science Certification',
     link:'https://replit.com/@ArepaZombie?path=folder/Python%20FreeCodeCamp%20Course'},
-    {title:'random quote app',
+    {title:"React quote app",
     lang:'HTML/CSS - JavaScript - React',
     desc:'App that shows a random quote and allows you to tweet the quote',
     link:'https://codepen.io/arepazombie/full/dyeRydP'},
