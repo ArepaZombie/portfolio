@@ -80,15 +80,15 @@ function Description(){
     desc:'A series of projects I made for the Computer Science Certification',
     link:'https://replit.com/@ArepaZombie?path=folder/Python%20FreeCodeCamp%20Course'},
     {title:'quote machine',
-      lang:'HTML/CSS - JavaScript - React',
+    lang:'HTML/CSS - JavaScript - React',
     desc:'App that shows a random quote and allows you to tweet the quote',
     link:'https://codepen.io/arepazombie/full/dyeRydP'},
     {title:'portfolio 1.0',
-      lang:'HTML/CSS',
+    lang:'HTML/CSS',
     desc:'My first portfolio... I am very proud of this one',
-    link:'https://arepazombie.github.io/portfolio/'},
+    link:'https://arepazombie.github.io/portfolio-01/'},
     {title:'Manga Store (WIP)',
-      lang:'HTML/CSS - JavaScript',
+    lang:'HTML/CSS - JavaScript',
     desc:'This is a group work. We are making a manga web store for our institute. Still in progress',
     link:'#'}
   ]
@@ -110,12 +110,6 @@ function Description(){
   <div id='papp'>
     <ul class="hideLeft" id="list-projects">
       {listProjects}
-      {/* <li><p class={`project ${projectIndx==0&&'project-selected'}`} onClick={()=>selectProject(0)}>drum machine</p></li>
-      <li><p class="project" onClick={()=>selectProject(1)}>quiz app</p></li>
-      <li><p class="project" onClick={()=>selectProject(2)}>ffC Projects</p></li>
-      <li><p class="project" onClick={()=>selectProject(3)}>quote machine</p></li>
-      <li><p class="project" onClick={()=>selectProject(4)}>Portfolio 1.0</p></li>
-      <li><p class="project s" onClick={()=>selectProject(5)}>Manga Store (WIP)</p></li> */}
     </ul> 
 
     <div class="hideRight" id="project-description-box">
