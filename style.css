@@ -66,7 +66,7 @@ header{
 a.anchor {
   display: block;
   position: relative;
-  top: -30vh;
+  top: -25vh;
   visibility: hidden;
 }
 
@@ -350,8 +350,8 @@ h1{
 }
 
 #sources-link-box{
-  margin: -45px auto 0 auto;
-  transform: rotate(5.5deg);
+  margin: -17.8rem auto 0 auto;
+  transform: rotate(10.5deg);
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -380,11 +380,11 @@ h1{
   color: white;
   padding: 100px 0 0 0;
   overflow: hidden;
-  height: 52rem;
+  height: 125rem;
   clip-path: polygon(0% 0%, 0% 100%,
   100% 100%, 100% 12%);  
   position: relative;
-  margin-top: calc(-52rem*0.19);
+  margin-top: calc(-125rem*0.15);
 }
 
 #contact-links{
@@ -392,11 +392,13 @@ h1{
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  width: 65%;
+  width: 100%;
   padding: 0;
   margin: 0;
   position: relative;
-  font-size: 4rem;
+  top: 31rem;
+  left: -5rem;
+  font-size: 6rem;
 }
 
 .contact-link{
@@ -411,7 +413,7 @@ h1{
 }
 
 #main-contact,#contact-links{
-  transform: rotate(-33deg);
+  transform: rotate(-40deg);
 }
 
 #main-contact{
@@ -422,32 +424,30 @@ h1{
   align-items: center;
   padding: 4px;
   margin: 0;
-  width: 100%;
-  height: 30rem;
-  border-left: solid var(--zombie-purple)  15rem;
-  border-right: solid var(--zombie-purple)  15rem;
+  width: 150rem;
+  height: 45rem;
   position: relative;
   right: 20rem;
-  top: -5rem;
+  top: 30rem;
   clip-path: polygon(0% 0%, 0% 55%, 
   100% 100%, 100% 0%);
 }
 
 #main-contact h2{
-  font-size: 10rem;
+  font-size: 15rem;
   margin: 0;
 }
 
 #main-contact a{
   display: inline-block;
   text-decoration: none;
-  font-size: 6.15rem;
+  font-size: 7rem;
   font-weight: 900;
   color: white;
-  transform: rotate(6deg);
+  transform: rotate(7deg);
   position: relative;
-  top: -7rem;
-  left: 2rem;
+  top: -12rem;
+  left: -10rem;
 }
 
 #main-contact a:hover{
