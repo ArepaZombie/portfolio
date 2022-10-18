@@ -623,11 +623,14 @@ h1{
   #main-contact{
     transform: rotate(-25deg);
     height: 50rem;
+    right: 7rem;
+    top: -8rem;
+    width: 103vw;
   }
 
   #main-contact h2{
     font-size: 18rem;
-    margin-left: -30rem;
+    margin-left: -40rem;
   }
 
   #main-contact a{
@@ -642,7 +645,8 @@ h1{
     font-size: 7rem;
     width: 50%;
     position: relative;
-    top: 18rem;
+    left: 10rem;
+    top: 13rem;
     transform: rotate(-25deg);
   }
 
