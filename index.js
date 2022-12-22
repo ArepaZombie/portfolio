@@ -88,10 +88,10 @@ function Description(){
     lang:'HTML/CSS',
     desc:'My first portfolio... I am very proud of this one',
     link:'https://arepazombie.github.io/portfolio-01/'},
-    {title:'Manga Store (WIP)',
+    {title:'Manga Store',
     lang:'HTML/CSS - JavaScript',
     desc:'This is a group work. We are making a manga web store for our institute. Still in progress',
-    link:'#'}
+    link:'https://arepazombie.github.io/MangaZombie/'}
   ]
 
   function selectProject(a){
