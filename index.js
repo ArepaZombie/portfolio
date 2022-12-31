@@ -89,9 +89,13 @@ function Description(){
     desc:'My first portfolio... I am very proud of this one',
     link:'https://arepazombie.github.io/portfolio-01/'},
     {title:'Manga Store',
-    lang:'HTML/CSS - JavaScript',
-    desc:'This is a group work. We are making a manga web store for our institute. Still in progress',
-    link:'https://arepazombie.github.io/MangaZombie/'}
+    lang:'HTML/CSS - JavaScript - React',
+    desc:'This is a group work. We are making a manga web store for our institute.',
+    link:'https://arepazombie.github.io/MangaZombie/'},
+    {title:'Game Table',
+    lang:'HTML/CSS - JavaScript - React',
+    desc:'A simple collection for different little table games made in React.js',
+    link:'https://arepazombie.github.io/arepa-juegos/'}
   ]
 
   function selectProject(a){
@@ -100,7 +104,7 @@ function Description(){
   let listProjects = []
   for (let i=0;i<=5;i++){
     listProjects.push(<li><p 
-      class={`project ${i==5&&'s'} ${projectIndx==i&&'project-selected'}`}
+      class={`project ${projectIndx==i&&'project-selected'}`}
       onClick={()=>selectProject(i)}>
         {projects[i].title}
         </p></li>)
