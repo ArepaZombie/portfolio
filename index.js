@@ -65,9 +65,21 @@ document.getElementById('soft').setAttribute('onclick','filtrar("soft")')
 
 function Description(){
   let [projectIndx, setProjectIndx]=React.useState(0);
-
+  
   /*PONER EL TITULO DENTRO DE PROJECTS Y GENERAR UNA SERIE DE LISTAS PARA MEJOR LECTURA */
   projects = [
+    {title:'Album display',
+    lang:'JavaScript - React',
+    desc:'SAP tha display different albums stored in the localStorage, uses the Spotify API',
+    link:'https://arepazombie.github.io/album-display/'},
+    {title:'Game Table',
+    lang:'JavaScript - React',
+    desc:'A simple collection for different little table games made in React.js',
+    link:'https://arepazombie.github.io/arepa-juegos/'},
+    {title:'Manga Store',
+    lang:'HTML/CSS - JavaScript - React',
+    desc:'This is a group work. We are making a manga web store for our institute.',
+    link:'https://arepazombie.github.io/MangaZombie/'},
     {title:'drum machine',
     lang:'HTML/CSS - JavaScript - React',
     desc:'A web drum machine with a cyberpunk style.',
@@ -76,10 +88,6 @@ function Description(){
     lang:'HTML/CSS - JavaScript - React',
     desc:'A simple gamer quiz app made for the React course in scrimba',
     link:'https://codepen.io/arepazombie/full/zYjmBxE'},
-    {title:'fCC challenges',
-    lang:'Python',
-    desc:'A series of projects I made for the Computer Science Certification',
-    link:'https://replit.com/@ArepaZombie?path=folder/Python%20FreeCodeCamp%20Course'},
     {title:"React quote app",
     lang:'HTML/CSS - JavaScript - React',
     desc:'App that shows a random quote and allows you to tweet the quote',
@@ -88,14 +96,6 @@ function Description(){
     lang:'HTML/CSS',
     desc:'My first portfolio... I am very proud of this one',
     link:'https://arepazombie.github.io/portfolio-01/'},
-    {title:'Manga Store',
-    lang:'HTML/CSS - JavaScript - React',
-    desc:'This is a group work. We are making a manga web store for our institute.',
-    link:'https://arepazombie.github.io/MangaZombie/'},
-    {title:'Game Table',
-    lang:'HTML/CSS - JavaScript - React',
-    desc:'A simple collection for different little table games made in React.js',
-    link:'https://arepazombie.github.io/arepa-juegos/'}
   ]
 
   function selectProject(a){
